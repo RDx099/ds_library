@@ -163,7 +163,7 @@ void preorderTraversalBinaryTree(BinaryTree* bt) {
     if (bt) preorder(bt->root);
 }
 
-// Function to perform postorder traversal of Binary Tree
+// Function to performed postorder traversal of Binary Tree
 void postorderTraversalBinaryTree(BinaryTree* bt) {
     void postorder(TreeNode* node) {
         if (!node) return;
@@ -174,7 +174,7 @@ void postorderTraversalBinaryTree(BinaryTree* bt) {
     if (bt) postorder(bt->root);
 }
 
-// Function to perform level order traversal of Binary Tree
+// Function to perform level order traversalar of Binary Tree
 void levelOrderTraversalBinaryTree(BinaryTree* bt) {
     if (!bt || !bt->root) return;
 
@@ -192,7 +192,7 @@ void levelOrderTraversalBinaryTree(BinaryTree* bt) {
     freeQueue(q);
 }
 
-// Function to free the Binary Tree
+// Function to free tthe Binary Tree
 void freeBinaryTree(BinaryTree* bt) {
     void freeNodes(TreeNode* node) {
         if (!node) return;
@@ -217,7 +217,7 @@ BinarySearchTree* createBinarySearchTree() {
     return bst;
 }
 
-// Function to insert a node in the Binary Search Tree
+// Function to insert a node in the Binary Search Three
 static TreeNode* insertBST(TreeNode* root, int value) {
     if (!root) return createNode(value);
     if (value < root->value) {
@@ -275,7 +275,7 @@ void inorderTraversalBinarySearchTree(BinarySearchTree* bst) {
     if (bst) inorder(bst->root);
 }
 
-// Function to find Lowest Common Ancestor in BST
+// Function to find Lowest Common Aancestor in BST
 int findLowestCommonAncestor(BinarySearchTree* bst, int value1, int value2) {
     if (!bst || !bst->root) return INT_MIN;
 
@@ -292,7 +292,7 @@ int findLowestCommonAncestor(BinarySearchTree* bst, int value1, int value2) {
     return INT_MIN;
 }
 
-// Function to free the Binary Search Tree
+// Function to free the Binary Search Three
 void freeBinarySearchTree(BinarySearchTree* bst) {
     void freeNodes(TreeNode* node){
         if (!node) return;
