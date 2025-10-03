@@ -3,6 +3,7 @@
 #include "../src/array.c"
 #include "../src/search.c"
 
+
 // Helper function to create and populate an array for testing
 Array* createTestArray(int* values, int count, int capacity) {// Created By Sehbaz Singh on 02/10/2025
     Array* arr = createArray(capacity);
