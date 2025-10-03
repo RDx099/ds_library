@@ -42,24 +42,28 @@ void push(Stack* stack, int value) {
 }
 
 // Pops the top value from the Stack
+//Created by Navpreet Kaur
 int pop(Stack* stack) {
     if (!stack || isEmptyStack(stack)) return INT_MIN;
     return stack->data[stack->top--];
 }
 
 // Returns the top value without removing it
+//Created by Navpreet Kaur
 int peek(Stack* stack) {
     if (!stack || isEmptyStack(stack)) return INT_MIN;
     return stack->data[stack->top];
 }
 
 // Checks if the Stack is empty
+//Created by Navpreet kaur
 int isEmptyStack(Stack* stack) {
     if (!stack) return 1;
     return stack->top == -1;
 }
 
 // Checks if the Stack is full
+//Created by Sanika
 int isFullStack(Stack* stack) {
     if (!stack) return 0;
     return stack->top == stack->capacity - 1;
