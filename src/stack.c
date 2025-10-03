@@ -8,6 +8,7 @@
 #include "stack.h"
 
 // Definition of the opaque struct
+//Created by Deepanshu
 struct Stack {
     int *data;
     int top;
@@ -15,7 +16,7 @@ struct Stack {
 };
 
 // Creates a Stack with the specified capacity
-// Created by Ritika
+// Created by Ritika and Shivam
 Stack* createStack(int capacity) {
     if (capacity <= 0) return NULL;
 
@@ -34,7 +35,7 @@ Stack* createStack(int capacity) {
 }
 
 // Pushes a value onto the Stack
-// Created by Navpreet Kaur
+// Created by Navpreet Kaur, Sanjana
 void push(Stack* stack, int value) {
     if (!stack || isFullStack(stack)) return;
     stack->data[++stack->top] = value;
@@ -65,7 +66,7 @@ int isFullStack(Stack* stack) {
 }
 
 // Traverses the Stack, printing all elements (top to bottom)
-// Created by Nitin
+// Created by Nitin,Harleen
 void traverseStack(Stack* stack) {
     if (!stack) {
         printf("Stack is NULL\n");
@@ -85,6 +86,7 @@ void traverseStack(Stack* stack) {
 }
 
 // Frees the Stack and its internal data
+//Created by Sanket
 void freeStack(Stack* stack) {
     if (!stack) return;
     free(stack->data);
@@ -115,7 +117,7 @@ int evaluatePostfix(const char* expr) {
                 freeStack(stack);
                 return INT_MIN; // Invalid expression
             }
-
+// Created by Sanika and Deepanshu
             int result;
             switch (ch) {
                 case '+': result = val1 + val2; break;
